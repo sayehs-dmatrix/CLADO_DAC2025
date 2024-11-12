@@ -1,7 +1,7 @@
 # Source code for CLADO
 We provide our code implementation of CLADO. We also include implementations of MPQCO and HAWQV3. 
 
-**Structure of codes:** All codes including three Python files and one bash script are placed under the *CLADO_SampleRun* folder. 
+**Structure of codes:** All codes including three Python files and one bash script are placed under the _main_ folder. 
 - _prep_mpqco_clado.py_: computes the sensitivities for MPQCO and CLADO. 
 - _prep_hawq.py_: computes the Hessian traces, which are used later by optimize.py to compute the sensitivities of HAWQ. 
 - _optimize.py_: takes the pre-computed sensitivities (traces for HAWQ) and solves the corresponding IQP(for CLADO)/ILP(for HAWQ and MPQCO) problems to get the MPQ decisions. It then evaluates the decisions and report quantized models’ performance.
